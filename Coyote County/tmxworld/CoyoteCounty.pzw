@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world version="1.0" width="15" height="20">
+ <BMPToTMX>
+  <tmxexportdir path="."/>
+  <rulesfile path=""/>
+  <blendsfile path=""/>
+  <mapbasefile path=""/>
+  <assign-maps-to-world checked="true"/>
+  <warn-unknown-colors checked="true"/>
+  <compress checked="true"/>
+  <copy-pixels checked="true"/>
+  <update-existing checked="true"/>
+ </BMPToTMX>
+ <TMXToBMP>
+  <mainImage generate="true"/>
+  <vegetationImage generate="true"/>
+  <buildingsImage path="" generate="false"/>
+ </TMXToBMP>
+ <GenerateLots>
+  <exportdir path="../../../../../Zomboid/Workshop/Coyote County For Friends/Contents/mods/Coyote County Araxas/media/maps/Coyote County Araxas"/>
+  <ZombieSpawnMap path="../coyote_ZombieSpawn.bmp"/>
+  <TileDefFolder path="../../../../../../../Program Files (x86)/Steam/steamapps/common/Project Zomboid Modding Tools/Tiles"/>
+  <worldOrigin origin="0,0"/>
+ </GenerateLots>
+ <LuaSettings>
+  <spawnPointsFile path="../../../../../Desktop/spawnpoints.lua"/>
+  <worldObjectsFile path="../Objects.lua"/>
+ </LuaSettings>
+ <bmp path="../coyote.bmp" x="0" y="0" width="15" height="15"/>
+ <bmp path="../../Spaceship/spaceship.bmp" x="0" y="16" width="1" height="1"/>
+ <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
+ <propertyenum name="Professions" choices="all,unemployed,policeofficer,constructionworker,securityguard,parkranger,fireofficer" multi="true"/>
+ <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
+ <propertyenum name="Skin" choices="White,Black" multi="false"/>
+ <propertyenum name="RoomTone" choices="Generic,Barn,Mall,Warehouse,Prison,Church,Office,Factory" multi="false"/>
+ <propertydef name="Direction" default="N" enum="Direction"/>
+ <propertydef name="FaceDirection" default="true"/>
+ <propertydef name="Professions" default="all" enum="Professions">
+  <description>Comma-separated list of professions that may spawn here.  Use &quot;all&quot; to allow any profession to spawn here.</description>
+ </propertydef>
+ <propertydef name="WaterDirection" default="0.0"/>
+ <propertydef name="WaterSpeed" default="0.0"/>
+ <propertydef name="WaterGround" default="false"/>
+ <propertydef name="WaterShore" default="true"/>
+ <propertydef name="Female" default="true"/>
+ <propertydef name="Pose" default="pose01" enum="Pose"/>
+ <propertydef name="Skin" default="White" enum="Skin"/>
+ <propertydef name="Outfit" default=""/>
+ <propertydef name="Script" default=""/>
+ <propertydef name="RoomTone" default="Generic" enum="RoomTone"/>
+ <propertydef name="EntireBuilding" default="false"/>
+ <template name="ParkingStallN">
+  <property name="Direction" value="N"/>
+ </template>
+ <template name="ParkingStallS">
+  <property name="Direction" value="S"/>
+ </template>
+ <template name="ParkingStallW">
+  <property name="Direction" value="W"/>
+ </template>
+ <template name="ParkingStallE">
+  <property name="Direction" value="E"/>
+ </template>
+ <template name="SpawnPoint">
+  <description>This template holds the default set of properties for all spawn points in the world.</description>
+  <property name="Professions" value="all"/>
+ </template>
+ <template name="WaterFlowN">
+  <property name="WaterDirection" value="0"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowS">
+  <property name="WaterDirection" value="180"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowE">
+  <property name="WaterDirection" value="90"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowW">
+  <property name="WaterDirection" value="270"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterZone">
+  <property name="WaterGround" value="false"/>
+  <property name="WaterShore" value="true"/>
+ </template>
+ <template name="RoomTone">
+  <property name="RoomTone" value="Generic"/>
+  <property name="EntireBuilding" value="false"/>
+ </template>
+ <objecttype name="TownZone"/>
+ <objecttype name="Forest"/>
+ <objecttype name="DeepForest"/>
+ <objecttype name="Nav"/>
+ <objecttype name="Vegitation"/>
+ <objecttype name="TrailerPark"/>
+ <objecttype name="Farm"/>
+ <objecttype name="ParkingStall"/>
+ <objecttype name="FarmLand"/>
+ <objecttype name="SpawnPoint"/>
+ <objecttype name="WaterFlow"/>
+ <objecttype name="WaterZone"/>
+ <objecttype name="Mannequin"/>
+ <objecttype name="ZombiesType"/>
+ <objecttype name="ZoneStory"/>
+ <objecttype name="RoomTone"/>
+ <objectgroup name="ParkingStall" color="#ff007f" defaulttype="ParkingStall"/>
+ <objectgroup name="TownZone" color="#aa0000" defaulttype="TownZone"/>
+ <objectgroup name="Forest" color="#00aa00" defaulttype="Forest"/>
+ <objectgroup name="Nav" color="#55aaff" defaulttype="Nav"/>
+ <objectgroup name="DeepForest" color="#003500" defaulttype="DeepForest"/>
+ <objectgroup name="Vegitation" color="#b3b300" defaulttype="Vegitation"/>
+ <objectgroup name="TrailerPark" color="#f50000" defaulttype="TrailerPark"/>
+ <objectgroup name="Farm" color="#55ff7f" defaulttype="Farm"/>
+ <objectgroup name="FarmLand" color="#bcff7d" defaulttype="FarmLand"/>
+ <objectgroup name="WaterFlow" color="#0000ff" defaulttype="WaterFlow"/>
+ <objectgroup name="WaterZone" color="#0000ff" defaulttype="WaterZone"/>
+ <objectgroup name="Mannequin" color="#0000ff" defaulttype="Mannequin"/>
+ <objectgroup name="ZombiesType" color="#002288" defaulttype="ZombiesType"/>
+ <objectgroup name="ZoneStory" color="#220088" defaulttype="ZoneStory"/>
+ <objectgroup name="RoomTone" color="#0000ff" defaulttype="RoomTone"/>
+ <cell x="0" y="0" map="coyote_0_0.tmx">
+  <object x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="1" y="0" map="coyote_1_0.tmx"/>
+ <cell x="2" y="0" map="coyote_2_0.tmx">
+  <lot x="285" y="0" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="93" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="124" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="155" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="186" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="217" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="248" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="279" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="0" map="coyote_3_0.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="-1" y="32" level="0" width="8" height="8" map="../../../../Buildings For PZ/billboards/north1.tbx"/>
+  <lot x="14" y="0" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="93" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="124" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="155" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="186" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="217" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="248" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="279" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+ </cell>
+ <cell x="4" y="0" map="coyote_4_0.tmx"/>
+ <cell x="5" y="0" map="coyote_5_0.tmx"/>
+ <cell x="6" y="0" map="coyote_6_0.tmx"/>
+ <cell x="7" y="0" map="coyote_7_0.tmx"/>
+ <cell x="8" y="0" map="coyote_8_0.tmx"/>
+ <cell x="9" y="0" map="coyote_9_0.tmx"/>
+ <cell x="10" y="0" map="coyote_10_0.tmx"/>
+ <cell x="11" y="0" map="coyote_11_0.tmx"/>
+ <cell x="12" y="0" map="coyote_12_0.tmx"/>
+ <cell x="13" y="0" map="coyote_13_0.tmx"/>
+ <cell x="14" y="0" map="coyote_14_0.tmx"/>
+ <cell x="0" y="1" map="coyote_0_1.tmx">
+  <lot x="42" y="252" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS01.tbx"/>
+  <lot x="42" y="234" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN01.tbx"/>
+  <lot x="42" y="216" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS02.tbx"/>
+  <lot x="42" y="198" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN02.tbx"/>
+  <lot x="42" y="180" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS03.tbx"/>
+  <lot x="42" y="162" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN03.tbx"/>
+  <lot x="102" y="180" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS03.tbx"/>
+  <lot x="102" y="144" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS02.tbx"/>
+  <lot x="102" y="126" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN02.tbx"/>
+  <lot x="102" y="108" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS01.tbx"/>
+  <lot x="102" y="162" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN01.tbx"/>
+  <lot x="180" y="262" level="0" width="20" height="33" map="../../../../Buildings For PZ/Endless Desert/ManCamp/Warehouse1.tbx"/>
+  <lot x="170" y="234" level="0" width="31" height="20" map="../../../../Buildings For PZ/Endless Desert/ManCamp/Warehouse2.tbx"/>
+  <lot x="180" y="198" level="0" width="20" height="33" map="../../../../Buildings For PZ/Endless Desert/ManCamp/Warehouse1.tbx"/>
+  <lot x="171" y="175" level="0" width="31" height="20" map="../../../../Buildings For PZ/Endless Desert/ManCamp/Warehouse2.tbx"/>
+  <lot x="166" y="111" level="0" width="37" height="55" map="../../../../Buildings For PZ/Endless Desert/ManCamp/LargeFactory.tbx"/>
+  <lot x="216" y="88" level="0" width="5" height="4" map="../../../../Buildings For PZ/Endless Desert/ManCamp/CheckInBuilding.tbx"/>
+  <lot x="83" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/EmptyTruckBed.tbx"/>
+  <lot x="90" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed1.tbx"/>
+  <lot x="76" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed2.tbx"/>
+  <lot x="97" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed3.tbx"/>
+  <lot x="104" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed2.tbx"/>
+  <lot x="111" y="8" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed3.tbx"/>
+  <lot x="76" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed3.tbx"/>
+  <lot x="90" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed3.tbx"/>
+  <lot x="83" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/TruckBed2.tbx"/>
+  <lot x="97" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/EmptyTruckBed.tbx"/>
+  <lot x="104" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/EmptyTruckBed.tbx"/>
+  <lot x="111" y="26" level="0" width="4" height="16" map="../../../../Buildings For PZ/Endless Desert/ManCamp/EmptyTruckBed.tbx"/>
+  <lot x="41" y="8" level="0" width="26" height="41" map="../../../../Buildings For PZ/Endless Desert/ManCamp/RecCenterAndCafeteria.tbx"/>
+  <lot x="44" y="73" level="0" width="19" height="22" map="../../../../Buildings For PZ/Endless Desert/ManCamp/AdministrationOffice1.tbx"/>
+  <lot x="184" y="6" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage2.tbx"/>
+  <lot x="159" y="6" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage2.tbx"/>
+  <lot x="163" y="22" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="142" y="7" level="0" width="10" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/LargeStorageShed3.tbx"/>
+  <lot x="124" y="19" level="0" width="13" height="19" map="../../../../Buildings For PZ/Endless Desert/Mentone/MechanicStorage1.tbx"/>
+  <lot x="144" y="29" level="0" width="12" height="7" map="../../../../Buildings For PZ/Endless Desert/ManCamp/FuelPumps.tbx"/>
+  <lot x="190" y="23" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="171" y="33" level="0" width="11" height="12" map="../../../../Buildings For PZ/Endless Desert/Mentone/WaterSupplyOffice.tbx"/>
+  <lot x="109" y="82" level="0" width="25" height="15" map="../../../../Buildings For PZ/desert town/AzaClinic.tbx"/>
+  <lot x="210" y="180" level="0" width="6" height="9" map="../../../../Buildings For PZ/desert town/AzaTrashTransferStation.tbx"/>
+  <lot x="103" y="198" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN03.tbx"/>
+  <lot x="103" y="216" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS01.tbx"/>
+  <lot x="42" y="109" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS01.tbx"/>
+  <lot x="41" y="144" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS02.tbx"/>
+  <lot x="103" y="234" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN03.tbx"/>
+  <lot x="103" y="252" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingS02.tbx"/>
+  <lot x="42" y="126" level="0" width="51" height="13" map="../../../../Buildings For PZ/Endless Desert/ManCamp/HousingN03.tbx"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="45" y="271" level="0" width="45" height="4">
+   <template name="ParkingStallN"/>
+   <property name="FaceDirection" value="true"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="104" y="271" level="0" width="45" height="4"/>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="142" y="248" level="0" width="8" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="86" y="247" level="0" width="4" height="3"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="217" y="112" level="0" width="4" height="63"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="227" y="112" level="0" width="4" height="63"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="237" y="112" level="0" width="4" height="63"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="247" y="112" level="0" width="4" height="63"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="144" y="37" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="151" y="36" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="142" y="25" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="175" y="24" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="187" y="29" level="0" width="4" height="3"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="131" y="38" level="0" width="3" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="77" y="43" level="0" width="3" height="4"/>
+  <object name="`medium" group="ParkingStall" type="ParkingStall" x="83" y="42" level="0" width="3" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="90" y="43" level="0" width="3" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="98" y="43" level="0" width="3" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="104" y="42" level="0" width="3" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="111" y="42" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="119" y="97" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="123" y="76" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="62" y="87" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="63" y="78" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="72" y="87" level="0" width="4" height="3"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="282" y="88" level="0" width="12" height="4"/>
+ </cell>
+ <cell x="1" y="1" map="coyote_1_1.tmx"/>
+ <cell x="2" y="1" map="coyote_2_1.tmx">
+  <lot x="204" y="48" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage2.tbx"/>
+  <lot x="205" y="75" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage.tbx"/>
+  <lot x="177" y="74" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage2.tbx"/>
+  <lot x="128" y="45" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="125" y="45" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="125" y="48" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="128" y="48" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="285" y="0" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="93" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="124" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="155" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="186" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="217" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="248" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="279" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="179" y="50" level="0" width="17" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasStorage2a.tbx"/>
+  <object group="Nav" type="Nav" x="202" y="114" level="0" width="10" height="186"/>
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="157" y="55" level="0" width="6" height="40"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="134" y="67" level="0" width="4" height="3"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="203" y="110" level="0" width="6" height="12"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="222" y="203" level="0" width="9" height="12"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="292" y="56" level="0" width="3" height="9"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="295" y="60" level="0" width="3" height="9"/>
+ </cell>
+ <cell x="3" y="1" map="coyote_3_1.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="64" y="5" level="0" width="20" height="6" map="../../../../Buildings For PZ/desert town/AzaTrailer4South.tbx"/>
+  <lot x="55" y="6" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/shedb.tbx"/>
+  <lot x="14" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="93" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="124" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="155" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="186" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="217" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="248" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="14" y="279" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="122" y="8" level="0" width="20" height="6" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/azatrailer2.tbx"/>
+  <lot x="129" y="49" level="0" width="20" height="9" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/azatrailer3.tbx"/>
+  <lot x="74" y="29" level="0" width="11" height="12" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/trailer1.tbx"/>
+  <lot x="75" y="64" level="0" width="11" height="12" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/trailer2.tbx"/>
+  <lot x="79" y="119" level="0" width="11" height="12" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/trailer3.tbx"/>
+  <lot x="145" y="78" level="0" width="21" height="21" map="../../../../Buildings For PZ/desert town - Copy/AzaTrailer2East.tbx"/>
+  <lot x="164" y="128" level="0" width="6" height="19" map="../../../../Buildings For PZ/desert town - Copy/AzaTrailer3East.tbx"/>
+  <lot x="161" y="180" level="0" width="6" height="19" map="../../../../Buildings For PZ/desert town - Copy/AzaTrailer4East.tbx"/>
+  <lot x="148" y="186" level="0" width="11" height="6" map="../../../../Buildings For PZ/desert town - Copy/trailerpark/azatrailer1backyard.tbx"/>
+  <lot x="74" y="168" level="0" width="9" height="20" map="../../../../Buildings For PZ/Trailors/template1.tbx"/>
+  <lot x="68" y="215" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/trailer0c.tbx"/>
+  <lot x="114" y="171" level="0" width="6" height="14" map="../../../../Buildings For PZ/community pool buildings/trailer0d.tbx"/>
+  <lot x="119" y="129" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/trailer1a.tbx"/>
+  <lot x="115" y="82" level="0" width="6" height="14" map="../../../../Buildings For PZ/community pool buildings/trailer1d.tbx"/>
+  <lot x="155" y="242" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/trailer0a.tbx"/>
+  <lot x="76" y="257" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/trailer1c.tbx"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="70" y="10" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="82" y="35" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="108" y="82" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="104" y="77" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="83" y="69" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="69" y="111" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="68" y="105" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="74" y="103" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="79" y="178" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="108" y="176" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="81" y="264" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="158" y="249" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="168" y="190" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="170" y="136" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="170" y="130" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="165" y="90" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="161" y="81" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="138" y="57" level="0" width="4" height="3"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="229" y="45" level="0" width="12" height="9"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="63" y="11" level="0" width="4" height="3"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="57" y="11" level="0" width="4" height="3"/>
+  <object group="Nav" type="Nav" x="0" y="1" level="0" width="13" height="11"/>
+  <object group="Nav" type="Nav" x="13" y="4" level="0" width="19" height="15"/>
+  <object group="Nav" type="Nav" x="32" y="9" level="0" width="21" height="10"/>
+  <object group="Nav" type="Nav" x="53" y="11" level="0" width="48" height="9"/>
+  <object group="Nav" type="Nav" x="101" y="12" level="0" width="51" height="11"/>
+  <object group="TrailerPark" type="TrailerPark" x="52" y="1" level="0" width="123" height="269"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="119" y="135" level="0" width="4" height="3"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="118" y="106" level="0" width="9" height="8"/>
+ </cell>
+ <cell x="4" y="1" map="coyote_4_1.tmx"/>
+ <cell x="5" y="1" map="coyote_5_1.tmx"/>
+ <cell x="6" y="1" map="coyote_6_1.tmx"/>
+ <cell x="7" y="1" map="coyote_7_1.tmx"/>
+ <cell x="8" y="1" map="coyote_8_1.tmx"/>
+ <cell x="9" y="1" map="coyote_9_1.tmx"/>
+ <cell x="10" y="1" map="coyote_10_1.tmx"/>
+ <cell x="11" y="1" map="coyote_11_1.tmx"/>
+ <cell x="12" y="1" map="coyote_12_1.tmx"/>
+ <cell x="13" y="1" map="coyote_13_1.tmx"/>
+ <cell x="14" y="1" map="coyote_14_1.tmx"/>
+ <cell x="0" y="2" map="coyote_0_2.tmx">
+  <lot x="127" y="150" level="0" width="8" height="7" map="../../../../Buildings For PZ/desert town/AzaDesertCamp2.tbx"/>
+  <lot x="135" y="161" level="0" width="9" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouse.tbx"/>
+  <lot x="135" y="151" level="0" width="11" height="13" map="../../../../Buildings For PZ/desert town/trash1.tbx"/>
+ </cell>
+ <cell x="1" y="2" map="coyote_1_2.tmx"/>
+ <cell x="2" y="2" map="coyote_2_2.tmx">
+  <lot x="285" y="0" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="93" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="124" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="155" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="186" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="217" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="248" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="279" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+  <object group="Nav" type="Nav" x="202" y="0" level="0" width="10" height="58"/>
+  <object group="Nav" type="Nav" x="201" y="58" level="0" width="6" height="242"/>
+ </cell>
+ <cell x="3" y="2" map="coyote_3_2.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="2" map="coyote_4_2.tmx"/>
+ <cell x="5" y="2" map="coyote_5_2.tmx"/>
+ <cell x="6" y="2" map="coyote_6_2.tmx"/>
+ <cell x="7" y="2" map="coyote_7_2.tmx"/>
+ <cell x="8" y="2" map="coyote_8_2.tmx"/>
+ <cell x="9" y="2" map="coyote_9_2.tmx"/>
+ <cell x="10" y="2" map="coyote_10_2.tmx"/>
+ <cell x="11" y="2" map="coyote_11_2.tmx"/>
+ <cell x="12" y="2" map="coyote_12_2.tmx"/>
+ <cell x="13" y="2" map="coyote_13_2.tmx"/>
+ <cell x="14" y="2" map="coyote_14_2.tmx"/>
+ <cell x="0" y="3" map="coyote_0_3.tmx"/>
+ <cell x="1" y="3" map="coyote_1_3.tmx"/>
+ <cell x="2" y="3" map="coyote_2_3.tmx">
+  <lot x="262" y="279" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/shedb.tbx"/>
+  <lot x="274" y="251" level="0" width="11" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/Cafe.tbx"/>
+  <lot x="234" y="277" level="0" width="11" height="12" map="../../../../Buildings For PZ/Endless Desert/Mentone/WaterSupplyOffice.tbx"/>
+  <lot x="228" y="257" level="0" width="13" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/TruckBox1.tbx"/>
+  <lot x="277" y="276" level="0" width="6" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/House1.tbx"/>
+  <lot x="272" y="213" level="0" width="15" height="16" map="../../../../Buildings For PZ/Endless Desert/Mentone/SmallGasStation.tbx"/>
+  <lot x="211" y="258" level="0" width="13" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/TruckBox1.tbx"/>
+  <lot x="265" y="227" level="0" width="6" height="8" map="../../../../Buildings For PZ/Endless Desert/Mentone/Shed1.tbx"/>
+  <lot x="273" y="236" level="0" width="6" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/SmallTruckBox.tbx"/>
+  <lot x="210" y="287" level="0" width="6" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/SmallTruckBox.tbx"/>
+  <lot x="167" y="255" level="0" width="6" height="9" map="../../../../Buildings For PZ/desert town/AzaTrashTransferStation.tbx"/>
+  <lot x="137" y="228" level="0" width="18" height="12" map="../../../../Buildings For PZ/desert town/autoshop.tbx"/>
+  <lot x="179" y="214" level="0" width="15" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/FoodTruck.tbx"/>
+  <lot x="104" y="225" level="0" width="15" height="23" map="../../../../Buildings For PZ/Endless Desert/Mentone/BIgModernHouse.tbx"/>
+  <lot x="211" y="221" level="0" width="20" height="6" map="../../../../Buildings For PZ/Endless Desert/TrailerPark/AzaTrailerHouse1.tbx"/>
+  <lot x="75" y="212" level="0" width="13" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/House2.tbx"/>
+  <lot x="63" y="212" level="0" width="10" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/LargeStorageShed.tbx"/>
+  <lot x="70" y="225" level="0" width="10" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/OutDoorGarage.tbx"/>
+  <lot x="50" y="286" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="69" y="257" level="0" width="15" height="19" map="../../../../Buildings For PZ/Endless Desert/Mentone/BigModernHouse2.tbx"/>
+  <lot x="18" y="219" level="0" width="19" height="15" map="../../../../Buildings For PZ/Endless Desert/Mentone/BigModernHouse3.tbx"/>
+  <lot x="154" y="181" level="0" width="15" height="13" map="../../../../Buildings For PZ/Endless Desert/Mentone/park.tbx"/>
+  <lot x="134" y="118" level="0" width="59" height="27" map="../../../../Buildings For PZ/Endless Desert/Mentone/School.tbx"/>
+  <lot x="182" y="83" level="0" width="13" height="19" map="../../../../Buildings For PZ/Endless Desert/Mentone/MechanicStorage1.tbx"/>
+  <lot x="153" y="18" level="0" width="11" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/LargeStorageShed2.tbx"/>
+  <lot x="160" y="30" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="152" y="67" level="0" width="9" height="29" map="../../../../Buildings For PZ/desert town/storageunitf.tbx"/>
+  <lot x="152" y="35" level="0" width="9" height="29" map="../../../../Buildings For PZ/desert town/storageunite.tbx"/>
+  <lot x="170" y="99" level="0" width="9" height="7" map="../../../../Buildings For PZ/desert town/storageunitoffice.tbx"/>
+  <lot x="181" y="17" level="0" width="4" height="8" map="../../../../Buildings For PZ/desert town/train3.tbx"/>
+  <lot x="175" y="14" level="0" width="4" height="8" map="../../../../Buildings For PZ/desert town/train3.tbx"/>
+  <lot x="175" y="23" level="0" width="4" height="8" map="../../../../Buildings For PZ/desert town/train3.tbx"/>
+  <lot x="170" y="36" level="0" width="9" height="29" map="../../../../Buildings For PZ/desert town/storageunitb.tbx"/>
+  <lot x="170" y="68" level="0" width="9" height="29" map="../../../../Buildings For PZ/desert town/storageunitd.tbx"/>
+  <lot x="105" y="51" level="0" width="21" height="21" map="../../../../Buildings For PZ/desert town/AzaHouseNorth2.tbx"/>
+  <lot x="108" y="16" level="0" width="20" height="9" map="../../../../Buildings For PZ/desert town/trailerpark/azatrailer3.tbx"/>
+  <lot x="22" y="80" level="0" width="10" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/BurntHouse.tbx"/>
+  <lot x="14" y="16" level="0" width="20" height="6" map="../../../../Buildings For PZ/Endless Desert/TrailerPark/AzaTrailerHouse2.tbx"/>
+  <lot x="41" y="123" level="0" width="19" height="29" map="../../../../Buildings For PZ/Endless Desert/Mentone/Sheriffs.tbx"/>
+  <lot x="75" y="125" level="0" width="14" height="23" map="../../../../Buildings For PZ/Endless Desert/Mentone/ParkingRoof.tbx"/>
+  <lot x="16" y="156" level="0" width="10" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/LargeStorageShed3.tbx"/>
+  <lot x="10" y="175" level="0" width="6" height="19" map="../../../../Buildings For PZ/desert town/AzaTrailer4East.tbx"/>
+  <lot x="30" y="156" level="0" width="9" height="11" map="../../../../Buildings For PZ/desert town/construction.tbx"/>
+  <lot x="65" y="173" level="0" width="17" height="13" map="../../../../Buildings For PZ/desert town/AzaPostOffice.tbx"/>
+  <lot x="39" y="175" level="0" width="6" height="14" map="../../../../Buildings For PZ/community pool buildings/trailer0d.tbx"/>
+  <lot x="16" y="122" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/trailer1a.tbx"/>
+  <lot x="18" y="135" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/sheda.tbx"/>
+  <lot x="19" y="168" level="0" width="11" height="13" map="../../../../Buildings For PZ/desert town/trash1.tbx"/>
+  <lot x="249" y="150" level="0" width="21" height="21" map="../../../../Buildings For PZ/Endless Desert/Mentone/CourtHouse.tbx"/>
+  <lot x="216" y="146" level="0" width="14" height="23" map="../../../../Buildings For PZ/Endless Desert/Mentone/ParkingRoof.tbx"/>
+  <lot x="285" y="0" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="31" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="62" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="285" y="78" level="0" width="2" height="31" map="../../../../Buildings For PZ/Endless Desert/cattlefence.tbx"/>
+  <lot x="214" y="84" level="0" width="14" height="22" map="../../../../Buildings For PZ/Endless Desert/Mentone/grill.tbx"/>
+  <lot x="220" y="31" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="221" y="37" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="261" y="93" level="0" width="20" height="6" map="../../../../Buildings For PZ/Endless Desert/TrailerPark/AzaTrailerHouse2.tbx"/>
+  <lot x="255" y="100" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/shedb.tbx"/>
+  <lot x="180" y="40" level="0" width="13" height="19" map="../../../../Buildings For PZ/Endless Desert/Mentone/StorageUnit1_withstorynotea.tbx"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="236" y="214" level="0" width="9" height="24"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="189" y="281" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="178" y="283" level="0" width="6" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="136" y="281" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="107" y="279" level="0" width="3" height="4"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="127" y="259" level="0" width="4" height="6"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="268" y="282" level="0" width="3" height="4"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="135" y="213" level="0" width="6" height="12"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="145" y="239" level="0" width="3" height="4"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="227" y="281" level="0" width="3" height="4"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="236" y="289" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="225" y="269" level="0" width="12" height="4"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="211" y="277" level="0" width="12" height="6"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="242" y="250" level="0" width="4" height="6"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="158" y="225" level="0" width="21" height="16"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="171" y="215" level="0" width="3" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="164" y="214" level="0" width="4" height="6"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="143" y="214" level="0" width="12" height="12"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="220" y="230" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="217" y="164" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="217" y="159" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="217" y="154" level="0" width="4" height="3"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="217" y="149" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="224" y="149" level="0" width="4" height="3"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="224" y="154" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="224" y="158" level="0" width="4" height="3"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="225" y="163" level="0" width="4" height="3"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="245" y="175" level="0" width="28" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="246" y="184" level="0" width="28" height="4"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="217" y="171" level="0" width="16" height="18"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="145" y="198" level="0" width="4" height="3"/>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="145" y="201" level="0" width="12" height="6"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="82" y="125" level="0" width="4" height="21"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="76" y="125" level="0" width="4" height="21"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="60" y="141" level="0" width="4" height="9"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="60" y="122" level="0" width="4" height="12"/>
+  <object name="spiffo" group="ParkingStall" type="ParkingStall" x="16" y="184" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="121" y="263" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="113" y="263" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="151" y="263" level="0" width="4" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="183" y="261" level="0" width="6" height="4"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="128" y="244" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="100" y="242" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="79" y="228" level="0" width="4" height="3"/>
+  <object name="post" group="ParkingStall" type="ParkingStall" x="69" y="186" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="20" y="166" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="32" y="178" level="0" width="4" height="3"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="39" y="158" level="0" width="3" height="4"/>
+  <object name="farm" group="ParkingStall" type="ParkingStall" x="18" y="130" level="0" width="4" height="3"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="33" y="85" level="0" width="3" height="4"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="49" y="67" level="0" width="4" height="6"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="19" y="21" level="0" width="4" height="3"/>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="73" y="0" level="0" width="9" height="3"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="73" y="3" level="0" width="9" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="165" y="24" level="0" width="3" height="4"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="166" y="76" level="0" width="4" height="3"/>
+  <object name="mccoy" group="ParkingStall" type="ParkingStall" x="174" y="107" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="189" y="102" level="0" width="3" height="4"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="194" y="91" level="0" width="4" height="3"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="185" y="70" level="0" width="8" height="9"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="182" y="28" level="0" width="8" height="9"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="229" y="40" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="273" y="100" level="0" width="3" height="4"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="283" y="222" level="0" width="3" height="4"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="277" y="245" level="0" width="6" height="4"/>
+  <object group="TownZone" type="TownZone" x="100" y="117" level="0" width="269" height="183"/>
+  <object group="Nav" type="Nav" x="297" y="94" level="0" width="1" height="1"/>
+  <object group="Nav" type="Nav" x="282" y="119" level="0" width="1" height="1"/>
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+  <object group="Nav" type="Nav" x="0" y="293" level="0" width="292" height="6"/>
+  <object group="Nav" type="Nav" x="0" y="0" level="0" width="6" height="293"/>
+  <object group="Nav" type="Nav" x="6" y="111" level="0" width="294" height="6"/>
+  <object group="Nav" type="Nav" x="201" y="0" level="0" width="6" height="111"/>
+  <object group="Nav" type="Nav" x="201" y="117" level="0" width="6" height="176"/>
+  <object group="Nav" type="Nav" x="207" y="201" level="0" width="85" height="6"/>
+  <object group="Nav" type="Nav" x="100" y="201" level="0" width="101" height="6"/>
+  <object group="Nav" type="Nav" x="6" y="201" level="0" width="87" height="6"/>
+  <object group="Nav" type="Nav" x="93" y="0" level="0" width="6" height="293"/>
+  <object group="Nav" type="Nav" x="6" y="0" level="0" width="87" height="6"/>
+  <object group="Nav" type="Nav" x="99" y="0" level="0" width="102" height="6"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="47" y="30" level="0" width="33" height="12"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="163" y="103" level="0" width="4" height="6"/>
+  <object name="farm" group="ParkingStall" type="ParkingStall" x="162" y="40" level="0" width="3" height="4"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="187" y="15" level="0" width="4" height="12"/>
+  <object name="fossoil" group="ParkingStall" type="ParkingStall" x="208" y="25" level="0" width="4" height="15"/>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="216" y="50" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="209" y="92" level="0" width="4" height="12"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="277" y="100" level="0" width="3" height="4"/>
+  <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="291" y="111" level="0" width="9" height="6"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="295" y="117" level="0" width="3" height="12"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="292" y="117" level="0" width="3" height="12"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="292" y="99" level="0" width="3" height="12"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="295" y="99" level="0" width="3" height="12"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="141" y="121" level="0" width="6" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="149" y="125" level="0" width="15" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="153" y="111" level="0" width="4" height="3"/>
+  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="201" y="109" level="0" width="6" height="9"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="218" y="125" level="0" width="60" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="218" y="134" level="0" width="60" height="4"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="286" y="217" level="0" width="3" height="4"/>
+ </cell>
+ <cell x="3" y="3" map="coyote_3_3.tmx">
+  <lot x="6" y="7" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="14" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="25" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="36" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="47" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="58" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="69" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="80" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="91" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="124" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="135" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="146" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="157" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="168" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="179" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="189" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="212" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="223" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="233" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="244" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="255" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="266" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="277" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="288" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="299" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="111" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouthB.tbx"/>
+  <lot x="6" y="116" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouthB.tbx"/>
+  <lot x="6" y="200" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouthB.tbx"/>
+  <lot x="48" y="82" level="0" width="14" height="10" map="../../../../Buildings For PZ/community pool buildings/peach/APHouse_7_-_R.tbx"/>
+  <lot x="85" y="186" level="0" width="14" height="10" map="../../../../Buildings For PZ/community pool buildings/peach/APHouse_7_V3.tbx"/>
+  <lot x="37" y="125" level="0" width="21" height="21" map="../../../../Buildings For PZ/desert town/AzaHouseNorth2.tbx"/>
+  <lot x="85" y="105" level="0" width="23" height="13" map="../../../../Buildings For PZ/desert town/AzaHouseSouth3.tbx"/>
+  <lot x="89" y="147" level="0" width="21" height="21" map="../../../../Buildings For PZ/desert town/AzaHouseSouth2.tbx"/>
+  <lot x="112" y="152" level="0" width="3" height="6" map="../../../../Buildings For PZ/desert town/AzaOldTrain.tbx"/>
+  <lot x="29" y="158" level="0" width="20" height="9" map="../../../../Buildings For PZ/desert town/trailerpark/azatrailer3.tbx"/>
+  <lot x="8" y="185" level="0" width="20" height="6" map="../../../../Buildings For PZ/desert town/trailerpark/azatrailer2.tbx"/>
+  <lot x="11" y="122" level="0" width="11" height="12" map="../../../../Buildings For PZ/desert town/trailerpark/trailer3.tbx"/>
+  <lot x="13" y="92" level="0" width="20" height="6" map="../../../../Buildings For PZ/desert town/trailerpark/azatrailer1.tbx"/>
+  <lot x="17" y="83" level="0" width="11" height="6" map="../../../../Buildings For PZ/desert town/trailerpark/azatrailer1backyard.tbx"/>
+  <lot x="6" y="212" level="0" width="18" height="26" map="../../../../Buildings For PZ/desert town/AzaFossoilGas.tbx"/>
+  <lot x="10" y="249" level="0" width="31" height="31" map="../../../../Buildings For PZ/smalltowngirl/gigamart (1).tbx"/>
+  <lot x="32" y="216" level="0" width="10" height="12" map="../../../../Buildings For PZ/smalltowngirl/camparea.tbx"/>
+  <lot x="45" y="218" level="0" width="3" height="5" map="../../../../Buildings For PZ/smalltowngirl/camp2.tbx"/>
+  <lot x="82" y="238" level="0" width="25" height="29" map="../../../../Buildings For PZ/smalltowngirl/AzaHardwareStore.tbx"/>
+  <object group="Nav" type="Nav" x="0" y="293" level="0" width="300" height="7"/>
+  <object group="Nav" type="Nav" x="63" y="112" level="0" width="6" height="181"/>
+  <object group="Nav" type="Nav" x="-2" y="201" level="0" width="65" height="7"/>
+  <object group="Nav" type="Nav" x="0" y="111" level="0" width="69" height="6"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="12" y="281" level="0" width="30" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="42" y="267" level="0" width="4" height="12"/>
+  <object name="ambulance" group="ParkingStall" type="ParkingStall" x="25" y="220" level="0" width="3" height="4"/>
+  <object name="spiffo" group="ParkingStall" type="ParkingStall" x="7" y="217" level="0" width="4" height="3"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="14" y="209" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="11" y="192" level="0" width="4" height="3"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="38" y="167" level="0" width="4" height="3"/>
+  <object name="trafficjamn" group="ParkingStall" type="ParkingStall" x="64" y="200" level="0" width="4" height="9"/>
+  <object name="sport" group="ParkingStall" type="ParkingStall" x="92" y="201" level="0" width="4" height="3"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="85" y="271" level="0" width="24" height="3"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="88" y="280" level="0" width="24" height="3"/>
+  <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="106" y="293" level="0" width="12" height="6"/>
+ </cell>
+ <cell x="4" y="3" map="coyote_4_3.tmx"/>
+ <cell x="5" y="3" map="coyote_5_3.tmx"/>
+ <cell x="6" y="3" map="coyote_6_3.tmx"/>
+ <cell x="7" y="3" map="coyote_7_3.tmx"/>
+ <cell x="8" y="3" map="coyote_8_3.tmx"/>
+ <cell x="9" y="3" map="coyote_9_3.tmx"/>
+ <cell x="10" y="3" map="coyote_10_3.tmx"/>
+ <cell x="11" y="3" map="coyote_11_3.tmx"/>
+ <cell x="12" y="3" map="coyote_12_3.tmx"/>
+ <cell x="13" y="3" map="coyote_13_3.tmx"/>
+ <cell x="14" y="3" map="coyote_14_3.tmx"/>
+ <cell x="0" y="4" map="coyote_0_4.tmx">
+  <lot x="175" y="82" level="0" width="8" height="7" map="../../../../Buildings For PZ/desert town/AzaDesertCamp2.tbx"/>
+ </cell>
+ <cell x="1" y="4" map="coyote_1_4.tmx"/>
+ <cell x="2" y="4" map="coyote_2_4.tmx">
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="4" map="coyote_3_4.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="4" y="4" map="coyote_4_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="5" y="4" map="coyote_5_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="6" y="4" map="coyote_6_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="7" y="4" map="coyote_7_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="8" y="4" map="coyote_8_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="9" y="4" map="coyote_9_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="10" y="4" map="coyote_10_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="11" y="4" map="coyote_11_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="12" y="4" map="coyote_12_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="13" y="4" map="coyote_13_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="14" y="4" map="coyote_14_4.tmx">
+  <lot x="-2" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="10" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="22" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="34" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="46" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="58" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="70" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="82" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="94" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="106" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="118" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="130" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="142" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="154" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="166" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="178" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="190" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="202" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="214" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="226" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="238" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="250" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="262" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="274" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="286" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+  <lot x="298" y="0" level="0" width="12" height="2" map="../../../../Buildings For PZ/Endless Desert/PowerLineEast.tbx"/>
+ </cell>
+ <cell x="0" y="5" map="coyote_0_5.tmx"/>
+ <cell x="1" y="5" map="coyote_1_5.tmx"/>
+ <cell x="2" y="5" map="coyote_2_5.tmx">
+  <object x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="5" map="coyote_3_5.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="5" map="coyote_4_5.tmx"/>
+ <cell x="5" y="5" map="coyote_5_5.tmx"/>
+ <cell x="6" y="5" map="coyote_6_5.tmx"/>
+ <cell x="7" y="5" map="coyote_7_5.tmx"/>
+ <cell x="8" y="5" map="coyote_8_5.tmx"/>
+ <cell x="9" y="5" map="coyote_9_5.tmx"/>
+ <cell x="10" y="5" map="coyote_10_5.tmx"/>
+ <cell x="11" y="5" map="coyote_11_5.tmx"/>
+ <cell x="12" y="5" map="coyote_12_5.tmx"/>
+ <cell x="13" y="5" map="coyote_13_5.tmx"/>
+ <cell x="14" y="5" map="coyote_14_5.tmx"/>
+ <cell x="0" y="6" map="coyote_0_6.tmx"/>
+ <cell x="1" y="6" map="coyote_1_6.tmx">
+  <lot x="117" y="62" level="0" width="14" height="12" map="../../../../Buildings For PZ/Endless Desert/Garden City/Poor/PoorHouse1.tbx"/>
+  <lot x="114" y="116" level="0" width="15" height="12" map="../../../../Buildings For PZ/Endless Desert/Garden City/Poor/PoorHouse4.tbx"/>
+  <lot x="76" y="207" level="0" width="15" height="12" map="../../../../Buildings For PZ/Endless Desert/Garden City/Poor/PoorHouse8.tbx"/>
+  <lot x="100" y="136" level="0" width="20" height="7" map="../../../../Buildings For PZ/Endless Desert/Garden City/Poor/AzaTrailerHouse1a.tbx"/>
+ </cell>
+ <cell x="2" y="6" map="coyote_2_6.tmx">
+  <lot x="125" y="220" level="0" width="14" height="11" map="../../../../Buildings For PZ/Endless Desert/RiverArea/IsolatedBar.tbx"/>
+  <lot x="214" y="253" level="0" width="8" height="7" map="../../../../Buildings For PZ/desert town/AzaDesertCamp2.tbx"/>
+  <lot x="223" y="251" level="0" width="2" height="3" map="../../../../Buildings For PZ/Endless Desert/tent.tbx"/>
+  <lot x="224" y="257" level="0" width="2" height="3" map="../../../../Buildings For PZ/Endless Desert/tent.tbx"/>
+  <lot x="217" y="263" level="0" width="2" height="3" map="../../../../Buildings For PZ/Endless Desert/tent.tbx"/>
+  <lot x="168" y="262" level="0" width="11" height="11" map="../../../../Buildings For PZ/Endless Desert/tents2.tbx"/>
+  <lot x="129" y="208" level="0" width="2" height="3" map="../../../../Buildings For PZ/Endless Desert/tent.tbx"/>
+  <lot x="128" y="208" level="0" width="11" height="11" map="../../../../Buildings For PZ/Endless Desert/tents2.tbx"/>
+  <lot x="108" y="238" level="0" width="21" height="21" map="../../../../Buildings For PZ/desert town/AzaTrailer2East.tbx"/>
+  <lot x="125" y="244" level="0" width="10" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/OutDoorGarage.tbx"/>
+  <lot x="103" y="254" level="0" width="10" height="11" map="../../../../Buildings For PZ/Endless Desert/Mentone/LargeStorageShed.tbx"/>
+  <lot x="113" y="259" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="114" y="232" level="0" width="6" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/SmallTruckBox.tbx"/>
+  <lot x="216" y="287" level="0" width="2" height="3" map="../../../../Buildings For PZ/Endless Desert/tent.tbx"/>
+  <lot x="154" y="288" level="0" width="11" height="11" map="../../../../Buildings For PZ/desert town - Copy/desertcampsite.tbx"/>
+  <lot x="185" y="259" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town - Copy/outhouse.tbx"/>
+  <lot x="137" y="219" level="0" width="2" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GasTankSmall.tbx"/>
+  <lot x="10" y="279" level="0" width="8" height="11" map="../../../../Buildings For PZ/Endless Desert/RiverArea/BaitShop.tbx"/>
+  <lot x="19" y="279" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town/outhouse.tbx"/>
+  <lot x="22" y="287" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/sheda.tbx"/>
+  <lot x="2" y="282" level="0" width="6" height="19" map="../../../../Buildings For PZ/desert town/AzaTrailer3East.tbx"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="181" y="266" level="0" width="3" height="4"/>
+  <object name="ranger" group="ParkingStall" type="ParkingStall" x="211" y="251" level="0" width="3" height="4"/>
+  <object name="police" group="ParkingStall" type="ParkingStall" x="179" y="229" level="0" width="3" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="125" y="231" level="0" width="3" height="4"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="128" y="231" level="0" width="3" height="4"/>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="132" y="231" level="0" width="3" height="4"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="135" y="231" level="0" width="3" height="4"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="119" y="220" level="0" width="4" height="9"/>
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="11" y="291" level="0" width="3" height="4"/>
+  <object name="good" group="ParkingStall" type="ParkingStall" x="15" y="291" level="0" width="3" height="4"/>
+ </cell>
+ <cell x="3" y="6" map="coyote_3_6.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="6" map="coyote_4_6.tmx"/>
+ <cell x="5" y="6" map="coyote_5_6.tmx"/>
+ <cell x="6" y="6" map="coyote_6_6.tmx"/>
+ <cell x="7" y="6" map="coyote_7_6.tmx"/>
+ <cell x="8" y="6" map="coyote_8_6.tmx"/>
+ <cell x="9" y="6" map="coyote_9_6.tmx"/>
+ <cell x="10" y="6" map="coyote_10_6.tmx"/>
+ <cell x="11" y="6" map="coyote_11_6.tmx"/>
+ <cell x="12" y="6" map="coyote_12_6.tmx"/>
+ <cell x="13" y="6" map="coyote_13_6.tmx"/>
+ <cell x="14" y="6" map="coyote_14_6.tmx"/>
+ <cell x="0" y="7" map="coyote_0_7.tmx">
+  <object name="bad" group="ParkingStall" type="ParkingStall" x="75" y="262" level="0" width="4" height="3"/>
+ </cell>
+ <cell x="1" y="7" map="coyote_1_7.tmx"/>
+ <cell x="2" y="7" map="coyote_2_7.tmx">
+  <object x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="7" map="coyote_3_7.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="7" map="coyote_4_7.tmx"/>
+ <cell x="5" y="7" map="coyote_5_7.tmx"/>
+ <cell x="6" y="7" map="coyote_6_7.tmx"/>
+ <cell x="7" y="7" map="coyote_7_7.tmx"/>
+ <cell x="8" y="7" map="coyote_8_7.tmx"/>
+ <cell x="9" y="7" map="coyote_9_7.tmx"/>
+ <cell x="10" y="7" map="coyote_10_7.tmx"/>
+ <cell x="11" y="7" map="coyote_11_7.tmx"/>
+ <cell x="12" y="7" map="coyote_12_7.tmx"/>
+ <cell x="13" y="7" map="coyote_13_7.tmx"/>
+ <cell x="14" y="7" map="coyote_14_7.tmx"/>
+ <cell x="0" y="8" map="coyote_1_8.tmx"/>
+ <cell x="1" y="8" map="coyote_1_8.tmx"/>
+ <cell x="2" y="8" map="coyote_2_8.tmx">
+  <object x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="8" map="coyote_3_8.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="8" map="coyote_4_8.tmx"/>
+ <cell x="5" y="8" map="coyote_5_8.tmx"/>
+ <cell x="6" y="8" map="coyote_6_8.tmx"/>
+ <cell x="7" y="8" map="coyote_7_8.tmx"/>
+ <cell x="8" y="8" map="coyote_8_8.tmx"/>
+ <cell x="9" y="8" map="coyote_9_8.tmx"/>
+ <cell x="10" y="8" map="coyote_10_8.tmx"/>
+ <cell x="11" y="8" map="coyote_11_8.tmx"/>
+ <cell x="12" y="8" map="coyote_12_8.tmx"/>
+ <cell x="13" y="8" map="coyote_13_8.tmx"/>
+ <cell x="14" y="8" map="coyote_14_8.tmx"/>
+ <cell x="0" y="9" map="coyote_0_9.tmx"/>
+ <cell x="1" y="9" map="coyote_1_9.tmx"/>
+ <cell x="2" y="9" map="coyote_2_9.tmx"/>
+ <cell x="3" y="9" map="coyote_3_9.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="9" map="coyote_4_9.tmx"/>
+ <cell x="5" y="9" map="coyote_5_9.tmx"/>
+ <cell x="6" y="9" map="coyote_6_9.tmx"/>
+ <cell x="7" y="9" map="coyote_7_9.tmx"/>
+ <cell x="8" y="9" map="coyote_8_9.tmx"/>
+ <cell x="9" y="9" map="coyote_9_9.tmx"/>
+ <cell x="10" y="9" map="coyote_10_9.tmx"/>
+ <cell x="11" y="9" map="coyote_11_9.tmx"/>
+ <cell x="12" y="9" map="coyote_12_9.tmx"/>
+ <cell x="13" y="9" map="coyote_13_9.tmx"/>
+ <cell x="14" y="9" map="coyote_14_9.tmx"/>
+ <cell x="0" y="10" map="coyote_0_10.tmx"/>
+ <cell x="1" y="10" map="coyote_1_10.tmx"/>
+ <cell x="2" y="10" map="coyote_2_10.tmx"/>
+ <cell x="3" y="10" map="coyote_3_10.tmx">
+  <lot x="6" y="0" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="11" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="22" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="33" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="44" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="55" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="66" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="77" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="88" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="99" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="110" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="121" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="132" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="143" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="154" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="165" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="176" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="187" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="198" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="209" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="220" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="231" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="242" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="253" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="264" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="275" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="286" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+  <lot x="6" y="297" level="0" width="2" height="12" map="../../../../Buildings For PZ/Endless Desert/PowerLineSouth.tbx"/>
+ </cell>
+ <cell x="4" y="10" map="coyote_4_10.tmx"/>
+ <cell x="5" y="10" map="coyote_5_10.tmx"/>
+ <cell x="6" y="10" map="coyote_6_10.tmx"/>
+ <cell x="7" y="10" map="coyote_7_10.tmx"/>
+ <cell x="8" y="10" map="coyote_8_10.tmx"/>
+ <cell x="9" y="10" map="coyote_9_10.tmx"/>
+ <cell x="10" y="10" map="coyote_10_10.tmx"/>
+ <cell x="11" y="10" map="coyote_11_10.tmx"/>
+ <cell x="12" y="10" map="coyote_12_10.tmx"/>
+ <cell x="13" y="10" map="coyote_13_10.tmx"/>
+ <cell x="14" y="10" map="coyote_14_10.tmx"/>
+ <cell x="0" y="11" map="coyote_0_11.tmx"/>
+ <cell x="1" y="11" map="coyote_1_11.tmx"/>
+ <cell x="2" y="11" map="coyote_2_11.tmx"/>
+ <cell x="3" y="11" map="coyote_3_11.tmx"/>
+ <cell x="4" y="11" map="coyote_4_11.tmx"/>
+ <cell x="5" y="11" map="coyote_5_11.tmx"/>
+ <cell x="6" y="11" map="coyote_6_11.tmx"/>
+ <cell x="7" y="11" map="coyote_7_11.tmx"/>
+ <cell x="8" y="11" map="coyote_8_11.tmx"/>
+ <cell x="9" y="11" map="coyote_9_11.tmx"/>
+ <cell x="10" y="11" map="coyote_10_11.tmx"/>
+ <cell x="11" y="11" map="coyote_11_11.tmx"/>
+ <cell x="12" y="11" map="coyote_12_11.tmx"/>
+ <cell x="13" y="11" map="coyote_13_11.tmx"/>
+ <cell x="14" y="11" map="coyote_14_11.tmx">
+  <lot x="87" y="246" level="0" width="13" height="9" map="../../../../Buildings For PZ/desert town/AzaGhostSheriff.tbx"/>
+  <lot x="51" y="246" level="0" width="8" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouseBurnt2.tbx"/>
+  <lot x="68" y="247" level="0" width="8" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouseBurnt.tbx"/>
+  <lot x="33" y="246" level="0" width="9" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouse.tbx"/>
+  <lot x="86" y="260" level="0" width="16" height="13" map="../../../../Buildings For PZ/desert town/oldtimey1.tbx"/>
+  <lot x="33" y="259" level="0" width="10" height="12" map="../../../../Buildings For PZ/desert town/oldtimeyschoolhouse.tbx"/>
+  <lot x="54" y="263" level="0" width="21" height="13" map="../../../../Buildings For PZ/desert town/oldtimeytrashedinn.tbx"/>
+  <lot x="76" y="262" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town/outhouse.tbx"/>
+  <lot x="44" y="263" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town/outhouse.tbx"/>
+  <lot x="25" y="213" level="0" width="20" height="18" map="../../../../Buildings For PZ/desert town/Envy_GhostChurch.tbx"/>
+  <lot x="60" y="210" level="0" width="21" height="21" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding1.tbx"/>
+  <lot x="48" y="221" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding2.tbx"/>
+  <lot x="120" y="219" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding2.tbx"/>
+  <lot x="82" y="220" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding3.tbx"/>
+  <lot x="135" y="218" level="0" width="18" height="11" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding4.tbx"/>
+  <lot x="157" y="217" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding2.tbx"/>
+  <lot x="123" y="244" level="0" width="9" height="8" map="../../../../Buildings For PZ/desert town - Copy/AzaGhostHouse.tbx"/>
+  <lot x="139" y="243" level="0" width="8" height="8" map="../../../../Buildings For PZ/desert town - Copy/AzaGhostHouseBurnt.tbx"/>
+  <lot x="151" y="240" level="0" width="16" height="17" map="../../../../Buildings For PZ/community pool buildings/burnt_house1.tbx"/>
+  <lot x="174" y="207" level="0" width="21" height="21" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding1.tbx"/>
+  <lot x="168" y="242" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/sheda.tbx"/>
+  <lot x="94" y="255" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/shedb.tbx"/>
+  <lot x="79" y="248" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/sheda.tbx"/>
+  <lot x="43" y="248" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/sheda.tbx"/>
+  <lot x="127" y="263" level="0" width="15" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/FoodTruck.tbx"/>
+  <lot x="145" y="266" level="0" width="14" height="6" map="../../../../Buildings For PZ/community pool buildings/ghostowntrailer.tbx"/>
+  <lot x="162" y="262" level="0" width="8" height="11" map="../../../../Buildings For PZ/Endless Desert/RiverArea/BaitShop.tbx"/>
+  <lot x="135" y="278" level="0" width="10" height="12" map="../../../../Buildings For PZ/smalltowngirl/camparea.tbx"/>
+  <lot x="132" y="251" level="0" width="11" height="11" map="../../../../Buildings For PZ/Endless Desert/tents2.tbx"/>
+  <lot x="174" y="242" level="0" width="9" height="4" map="../../../../Buildings For PZ/Trailors/logging.tbx"/>
+  <lot x="167" y="254" level="0" width="7" height="6" map="../../../../Buildings For PZ/Trailors/Shed1.tbx"/>
+  <lot x="148" y="260" level="0" width="6" height="2" map="../../../../Buildings For PZ/Endless Desert/Mentone/GastTank3.tbx"/>
+  <lot x="175" y="265" level="0" width="13" height="4" map="../../../../Buildings For PZ/Endless Desert/Mentone/TruckBox1.tbx"/>
+  <lot x="148" y="279" level="0" width="15" height="13" map="../../../../Buildings For PZ/Endless Desert/Mentone/park.tbx"/>
+  <lot x="83" y="192" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding3.tbx"/>
+  <lot x="29" y="37" level="0" width="21" height="21" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding1.tbx"/>
+  <lot x="36" y="7" level="0" width="18" height="11" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding4.tbx"/>
+  <lot x="91" y="34" level="0" width="9" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouse2.tbx"/>
+  <lot x="71" y="13" level="0" width="8" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouseBurnt.tbx"/>
+  <lot x="84" y="34" level="0" width="6" height="8" map="../../../../Buildings For PZ/Endless Desert/Mentone/Shed1.tbx"/>
+  <lot x="91" y="77" level="0" width="10" height="10" map="../../../../Buildings For PZ/Endless Desert/Mentone/BurntHouse.tbx"/>
+  <lot x="154" y="137" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding3.tbx"/>
+  <lot x="187" y="79" level="0" width="12" height="10" map="../../../../Buildings For PZ/Endless Desert/Ghost Town/abandonedbuilding2.tbx"/>
+  <lot x="165" y="50" level="0" width="20" height="18" map="../../../../Buildings For PZ/desert town/Envy_GhostChurch.tbx"/>
+  <lot x="140" y="15" level="0" width="11" height="11" map="../../../../Buildings For PZ/desert town/desertcampsite.tbx"/>
+  <lot x="177" y="81" level="0" width="6" height="6" map="../../../../Buildings For PZ/desert town/shedb.tbx"/>
+  <lot x="179" y="71" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town/outhouse.tbx"/>
+  <lot x="217" y="72" level="0" width="10" height="12" map="../../../../Buildings For PZ/desert town/oldtimeyschoolhouse.tbx"/>
+  <lot x="198" y="50" level="0" width="21" height="13" map="../../../../Buildings For PZ/desert town/oldtimeytrashedinn.tbx"/>
+  <lot x="199" y="64" level="0" width="8" height="4" map="../../../../Buildings For PZ/desert town/outhouse.tbx"/>
+  <lot x="154" y="37" level="0" width="9" height="8" map="../../../../Buildings For PZ/desert town/AzaGhostHouse2.tbx"/>
+  <lot x="213" y="95" level="0" width="16" height="13" map="../../../../Buildings For PZ/desert town/oldtimey1.tbx"/>
+  <lot x="182" y="97" level="0" width="13" height="9" map="../../../../Buildings For PZ/desert town/AzaGhostSheriff.tbx"/>
+  <lot x="13" y="129" level="0" width="8" height="7" map="../../../../Buildings For PZ/desert town/AzaDesertCamp2.tbx"/>
+ </cell>
+ <cell x="0" y="12" map="coyote_0_12.tmx"/>
+ <cell x="1" y="12" map="coyote_1_12.tmx"/>
+ <cell x="2" y="12" map="coyote_2_12.tmx">
+  <lot x="18" y="156" level="0" width="15" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 8.tbx"/>
+  <lot x="70" y="169" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 2.tbx"/>
+  <lot x="91" y="171" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 4.tbx"/>
+  <lot x="49" y="144" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 6.tbx"/>
+  <lot x="89" y="145" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 3.tbx"/>
+  <lot x="18" y="181" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 1.tbx"/>
+  <lot x="19" y="132" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 3.tbx"/>
+  <lot x="69" y="143" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 1.tbx"/>
+  <lot x="49" y="169" level="0" width="11" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 6.tbx"/>
+  <lot x="48" y="106" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 4.tbx"/>
+  <lot x="91" y="105" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="69" y="105" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 3.tbx"/>
+  <lot x="76" y="135" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="54" y="134" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 2.tbx"/>
+  <lot x="121" y="105" level="0" width="15" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 1.tbx"/>
+  <lot x="121" y="125" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 3.tbx"/>
+  <lot x="129" y="204" level="0" width="56" height="53" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/ApartmentComplex2.tbx"/>
+  <lot x="239" y="223" level="0" width="18" height="29" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Bar.tbx"/>
+  <lot x="148" y="166" level="0" width="9" height="23" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Cafe East 01.tbx"/>
+  <lot x="102" y="26" level="0" width="17" height="31" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Grocery Shop West 01.tbx"/>
+  <lot x="148" y="147" level="0" width="22" height="21" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Office Small West 01.tbx"/>
+  <lot x="130" y="55" level="0" width="41" height="32" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Paint Shop West 01.tbx"/>
+  <lot x="202" y="40" level="0" width="31" height="53" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Toystore hotel West 01.tbx"/>
+  <lot x="119" y="177" level="0" width="22" height="17" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Clothes Shop SouthEast 01.tbx"/>
+  <lot x="150" y="86" level="0" width="42" height="23" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Commercial Block South 01.tbx"/>
+  <lot x="171" y="155" level="0" width="21" height="21" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Laundromat South 01.tbx"/>
+  <lot x="102" y="51" level="0" width="40" height="22" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Shoe store metal store south 01.tbx"/>
+  <lot x="235" y="70" level="0" width="35" height="21" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Zippe Offices South 01.tbx"/>
+  <lot x="156" y="157" level="0" width="16" height="32" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/VHS Store East 01.tbx"/>
+  <lot x="126" y="152" level="0" width="21" height="22" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/Toy Store East 01.tbx"/>
+  <lot x="176" y="24" level="0" width="16" height="51" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/Sport Gift Eletric Small Store East 01.tbx"/>
+  <lot x="171" y="111" level="0" width="21" height="21" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/Music Store NorthEast.tbx"/>
+  <lot x="176" y="135" level="0" width="17" height="22" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/Clothes&amp;Gen Store East 01.tbx"/>
+  <lot x="269" y="50" level="0" width="21" height="41" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/East/Bookstore Restaurant Office East01.tbx"/>
+  <lot x="202" y="103" level="0" width="65" height="35" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/Big Office North 01.tbx"/>
+  <lot x="203" y="1" level="0" width="26" height="41" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/Big Store NorthWest 01.tbx"/>
+  <lot x="229" y="0" level="0" width="22" height="18" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/Office Abandoned 01.tbx"/>
+  <lot x="250" y="4" level="0" width="40" height="42" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/Big Office North 02.tbx"/>
+  <lot x="102" y="-1" level="0" width="41" height="36" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/Arcade North 01.tbx"/>
+  <lot x="141" y="2" level="0" width="50" height="24" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/2 stores north 01.tbx"/>
+  <lot x="149" y="118" level="0" width="31" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/North/jewrelry shoe north 01.tbx"/>
+  <lot x="149" y="136" level="0" width="16" height="16" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/Gen Store West 01.tbx"/>
+  <lot x="72" y="272" level="0" width="20" height="6" map="../../../../Buildings For PZ/Endless Desert/TrailerPark/AzaTrailerHouse2.tbx"/>
+  <lot x="18" y="238" level="0" width="20" height="6" map="../../../../Buildings For PZ/Endless Desert/TrailerPark/AzaTrailerHouse1.tbx"/>
+  <lot x="18" y="277" level="0" width="15" height="6" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/AzaTrailerHouse3.tbx"/>
+  <lot x="43" y="277" level="0" width="20" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/AzaTrailerHouse1a.tbx"/>
+  <lot x="68" y="220" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 5.tbx"/>
+  <lot x="68" y="248" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="29" y="209" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 4.tbx"/>
+  <lot x="66" y="280" level="0" width="6" height="6" map="../../../../Buildings For PZ/credit them/fantasiado/Miscelaneous/Shed/sheda.tbx"/>
+  <lot x="66" y="240" level="0" width="6" height="6" map="../../../../Buildings For PZ/credit them/fantasiado/Miscelaneous/Shed/shedb.tbx"/>
+  <lot x="72" y="227" level="0" width="10" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Miscelaneous/Shed/OutDoorGarage.tbx"/>
+  <lot x="78" y="211" level="0" width="6" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Miscelaneous/Shed/Shed1.tbx"/>
+  <lot x="103" y="259" level="0" width="14" height="19" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/West/ApartmentOfficeSlashGym.tbx"/>
+  <object type="SpawnPoint" x="154" y="242" level="2" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
+  <object x="150" y="69" level="0" width="14" height="17"/>
+  <object x="232" y="71" level="0" width="37" height="20"/>
+  <object x="202" y="61" level="0" width="30" height="30"/>
+  <object x="269" y="41" level="0" width="20" height="30"/>
+  <object x="269" y="3" level="0" width="20" height="38"/>
+  <object x="226" y="3" level="0" width="43" height="20"/>
+  <object x="202" y="41" level="0" width="20" height="20"/>
+  <object x="202" y="3" level="0" width="24" height="31"/>
+ </cell>
+ <cell x="3" y="12" map="coyote_3_12.tmx"/>
+ <cell x="4" y="12" map="coyote_4_12.tmx">
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="112" y="236" level="0" width="60" height="60"/>
+ </cell>
+ <cell x="5" y="12" map="coyote_5_12.tmx"/>
+ <cell x="6" y="12" map="coyote_6_12.tmx"/>
+ <cell x="7" y="12" map="coyote_7_12.tmx"/>
+ <cell x="8" y="12" map="coyote_8_12.tmx"/>
+ <cell x="9" y="12" map="coyote_9_12.tmx"/>
+ <cell x="10" y="12" map="coyote_10_12.tmx"/>
+ <cell x="11" y="12" map="coyote_11_12.tmx"/>
+ <cell x="12" y="12" map="coyote_12_12.tmx"/>
+ <cell x="13" y="12" map="coyote_13_12.tmx"/>
+ <cell x="14" y="12" map="coyote_14_12.tmx"/>
+ <cell x="0" y="13" map="coyote_0_13.tmx"/>
+ <cell x="1" y="13" map="coyote_1_13.tmx">
+  <lot x="275" y="219" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_1_1.tbx"/>
+  <lot x="266" y="176" level="0" width="11" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_2_2.tbx"/>
+  <lot x="184" y="179" level="0" width="8" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_5_1.tbx"/>
+  <lot x="141" y="127" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_3_4.tbx"/>
+  <lot x="184" y="136" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_4_5.tbx"/>
+  <lot x="183" y="154" level="0" width="10" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_6_2.tbx"/>
+  <lot x="185" y="106" level="0" width="7" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_3_2.tbx"/>
+  <lot x="234" y="247" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 1.tbx"/>
+  <lot x="240" y="230" level="0" width="15" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 1.tbx"/>
+  <lot x="235" y="206" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 2.tbx"/>
+  <lot x="246" y="206" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 3.tbx"/>
+  <lot x="201" y="206" level="0" width="15" height="6" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/AzaTrailerHouse3.tbx"/>
+  <lot x="206" y="233" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="192" y="230" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 1.tbx"/>
+  <lot x="169" y="207" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 7.tbx"/>
+  <lot x="168" y="223" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="202" y="174" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_1_1.tbx"/>
+  <lot x="145" y="154" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_4_2.tbx"/>
+  <lot x="243" y="107" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_1_3.tbx"/>
+  <lot x="122" y="139" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_3.tbx"/>
+  <lot x="201" y="106" level="0" width="10" height="14" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_2_4.tbx"/>
+  <lot x="203" y="136" level="0" width="9" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_6_1.tbx"/>
+  <lot x="236" y="178" level="0" width="9" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_5_3.tbx"/>
+  <lot x="254" y="158" level="0" width="9" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_3_1.tbx"/>
+  <lot x="280" y="111" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_5.tbx"/>
+  <lot x="285" y="174" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_7_4.tbx"/>
+  <lot x="274" y="144" level="0" width="9" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_3_5.tbx"/>
+  <lot x="268" y="254" level="0" width="35" height="21" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/Cafe.tbx"/>
+ </cell>
+ <cell x="2" y="13" map="coyote_2_13.tmx">
+  <lot x="9" y="217" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_1_1.tbx"/>
+  <lot x="39" y="216" level="0" width="13" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_2_3.tbx"/>
+  <lot x="66" y="215" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_4_5.tbx"/>
+  <lot x="98" y="216" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_7_4.tbx"/>
+  <lot x="111" y="171" level="0" width="11" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_6_1.tbx"/>
+  <lot x="132" y="172" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_4_3.tbx"/>
+  <lot x="211" y="71" level="0" width="11" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_6_1.tbx"/>
+  <lot x="179" y="70" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_7_4.tbx"/>
+  <lot x="157" y="70" level="0" width="13" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_2_4.tbx"/>
+  <lot x="77" y="254" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_2_2.tbx"/>
+  <lot x="146" y="215" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_2_4.tbx"/>
+  <lot x="180" y="217" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_1.tbx"/>
+  <lot x="41" y="254" level="0" width="15" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_7_2.tbx"/>
+  <lot x="11" y="255" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_3.tbx"/>
+  <lot x="157" y="108" level="0" width="15" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_7_1.tbx"/>
+  <lot x="115" y="63" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_7_5.tbx"/>
+  <lot x="244" y="106" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_7_3.tbx"/>
+  <lot x="210" y="108" level="0" width="9" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_3_1.tbx"/>
+  <lot x="56" y="171" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_1_1.tbx"/>
+  <lot x="56" y="148" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_2.tbx"/>
+  <lot x="165" y="136" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_4.tbx"/>
+  <lot x="55" y="94" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_5.tbx"/>
+  <lot x="164" y="168" level="0" width="10" height="14" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_2_5.tbx"/>
+  <lot x="54" y="72" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_7_4.tbx"/>
+  <lot x="105" y="265" level="0" width="9" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_6_3.tbx"/>
+  <lot x="214" y="34" level="0" width="9" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_6_2.tbx"/>
+  <lot x="212" y="10" level="0" width="12" height="14" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_1_5.tbx"/>
+  <lot x="117" y="27" level="0" width="10" height="14" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_2_2.tbx"/>
+  <lot x="117" y="6" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_1.tbx"/>
+  <lot x="9" y="169" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_1_1.tbx"/>
+  <lot x="18" y="90" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_4_1.tbx"/>
+  <lot x="19" y="69" level="0" width="11" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_7_2.tbx"/>
+  <lot x="200" y="133" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_7_3.tbx"/>
+  <lot x="205" y="156" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_4_3.tbx"/>
+  <lot x="205" y="174" level="0" width="8" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_5_1.tbx"/>
+  <lot x="142" y="276" level="0" width="7" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_3_2.tbx"/>
+  <lot x="140" y="242" level="0" width="10" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_2_4.tbx"/>
+  <lot x="19" y="28" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_1_5.tbx"/>
+  <lot x="69" y="32" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_7_4.tbx"/>
+  <lot x="94" y="34" level="0" width="13" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_3_3.tbx"/>
+  <lot x="42" y="30" level="0" width="13" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_2_5.tbx"/>
+  <lot x="160" y="32" level="0" width="8" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_5_1.tbx"/>
+  <lot x="156" y="11" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_1_5.tbx"/>
+  <lot x="12" y="146" level="0" width="11" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_7_2.tbx"/>
+  <lot x="251" y="5" level="0" width="34" height="44" map="../../../../Buildings For PZ/credit them/fantasiado/Commercial stuff/Town/South/AzaGrocery.tbx"/>
+ </cell>
+ <cell x="3" y="13" map="coyote_3_13.tmx"/>
+ <cell x="4" y="13" map="coyote_4_13.tmx">
+  <lot x="59" y="39" level="0" width="6" height="9" map="../../../../Buildings For PZ/desert town/AzaTrashTransferStation.tbx"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="81" y="23" level="0" width="6" height="15"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="81" y="2" level="0" width="6" height="21"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="146" y="25" level="0" width="8" height="9"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="155" y="11" level="0" width="21" height="28"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="130" y="62" level="0" width="24" height="16"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="92" y="62" level="0" width="27" height="16"/>
+  <object name="junkyard" group="ParkingStall" type="ParkingStall" x="63" y="56" level="0" width="21" height="24"/>
+ </cell>
+ <cell x="5" y="13" map="coyote_5_13.tmx"/>
+ <cell x="6" y="13" map="coyote_6_13.tmx"/>
+ <cell x="7" y="13" map="coyote_7_13.tmx"/>
+ <cell x="8" y="13" map="coyote_8_13.tmx"/>
+ <cell x="9" y="13" map="coyote_9_13.tmx"/>
+ <cell x="10" y="13" map="coyote_10_13.tmx"/>
+ <cell x="11" y="13" map="coyote_11_13.tmx"/>
+ <cell x="12" y="13" map="coyote_12_13.tmx"/>
+ <cell x="13" y="13" map="coyote_13_13.tmx"/>
+ <cell x="14" y="13" map="coyote_14_13.tmx"/>
+ <cell x="0" y="14" map="coyote_0_14.tmx">
+  <lot x="177" y="133" level="0" width="48" height="35" map="../../../../Buildings For PZ/credit them/azakaela/cave system/cave_1_east_exit.tbx"/>
+ </cell>
+ <cell x="1" y="14" map="coyote_1_14.tmx">
+  <lot x="269" y="6" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/South/Industrial_Simple_Garage_South.tbx"/>
+  <lot x="254" y="6" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/South/Industrial_Simple_Garage_South_02.tbx"/>
+  <lot x="260" y="27" level="0" width="12" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/North/Industrial_Simple_Garage_North.tbx"/>
+  <lot x="245" y="27" level="0" width="12" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/North/Industrial_Simple_Garage_North_02.tbx"/>
+ </cell>
+ <cell x="2" y="14" map="coyote_2_14.tmx">
+  <lot x="159" y="154" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_1_1.tbx"/>
+  <lot x="259" y="74" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_1_2.tbx"/>
+  <lot x="270" y="159" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_5_1.tbx"/>
+  <lot x="180" y="157" level="0" width="13" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_3_1.tbx"/>
+  <lot x="225" y="75" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_7_1.tbx"/>
+  <lot x="244" y="155" level="0" width="11" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_6_5.tbx"/>
+  <lot x="228" y="156" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_4_1.tbx"/>
+  <lot x="268" y="103" level="0" width="11" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_6_4.tbx"/>
+  <lot x="253" y="105" level="0" width="7" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_3_1.tbx"/>
+  <lot x="252" y="129" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_4_1.tbx"/>
+  <lot x="171" y="184" level="0" width="8" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_5_1.tbx"/>
+  <lot x="187" y="18" level="0" width="8" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_5_2.tbx"/>
+  <lot x="187" y="53" level="0" width="9" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_4_4.tbx"/>
+  <lot x="231" y="190" level="0" width="9" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/East/PoorHouse_East_2_3.tbx"/>
+  <lot x="259" y="39" level="0" width="12" height="13" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_1_3.tbx"/>
+  <lot x="137" y="107" level="0" width="10" height="14" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_2_4.tbx"/>
+  <lot x="182" y="122" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_1.tbx"/>
+  <lot x="228" y="134" level="0" width="12" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_4_5.tbx"/>
+  <lot x="182" y="108" level="0" width="9" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_5_5.tbx"/>
+  <lot x="259" y="18" level="0" width="9" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/West/PoorHouse_West_6_1.tbx"/>
+  <lot x="57" y="248" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 1.tbx"/>
+  <lot x="265" y="141" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 1.tbx"/>
+  <lot x="247" y="120" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="33" y="223" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 2.tbx"/>
+  <lot x="38" y="207" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 7.tbx"/>
+  <lot x="80" y="194" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 2.tbx"/>
+  <lot x="62" y="190" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="71" y="262" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="144" y="41" level="0" width="15" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 1.tbx"/>
+  <lot x="142" y="21" level="0" width="15" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 8.tbx"/>
+  <lot x="96" y="39" level="0" width="13" height="10" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_2_4.tbx"/>
+  <lot x="120" y="41" level="0" width="13" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_3_2.tbx"/>
+  <lot x="192" y="77" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_5_2.tbx"/>
+  <lot x="40" y="91" level="0" width="13" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/South/PoorHouse_South_3_5.tbx"/>
+  <lot x="102" y="71" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_1_3.tbx"/>
+  <lot x="127" y="160" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_2_4.tbx"/>
+  <lot x="102" y="161" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_2.tbx"/>
+  <lot x="265" y="186" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_5.tbx"/>
+  <lot x="71" y="156" level="0" width="15" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_4_2.tbx"/>
+  <lot x="4" y="71" level="0" width="10" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_5_3.tbx"/>
+  <lot x="34" y="71" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_2_2.tbx"/>
+  <lot x="234" y="22" level="0" width="13" height="11" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_2_4.tbx"/>
+  <lot x="202" y="21" level="0" width="13" height="12" map="../../../../Buildings For PZ/credit them/fantasiado/Houses/Town/Lower/North/PoorHouse_North_1_3.tbx"/>
+  <lot x="2" y="31" level="0" width="5" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/North/Container_North_1.tbx"/>
+  <lot x="7" y="30" level="0" width="5" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/North/Container_North_3.tbx"/>
+  <lot x="18" y="5" level="0" width="5" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/South/Container_South_2.tbx"/>
+  <lot x="28" y="4" level="0" width="5" height="8" map="../../../../Buildings For PZ/credit them/fantasiado/Industrial/Warehouses/South/Container_South_3.tbx"/>
+  <object group="Nav" type="Nav" x="292" y="0" level="0" width="6" height="300"/>
+ </cell>
+ <cell x="3" y="14" map="coyote_3_14.tmx">
+  <lot x="51" y="33" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 2.tbx"/>
+  <lot x="26" y="31" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="133" y="29" level="0" width="11" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 6.tbx"/>
+  <lot x="163" y="33" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 3.tbx"/>
+  <lot x="77" y="35" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 6.tbx"/>
+  <lot x="95" y="29" level="0" width="15" height="9" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 8.tbx"/>
+  <lot x="101" y="79" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 6.tbx"/>
+  <lot x="136" y="77" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 5.tbx"/>
+  <lot x="136" y="61" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 5.tbx"/>
+  <lot x="98" y="62" level="0" width="9" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 1.tbx"/>
+  <lot x="71" y="85" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 3.tbx"/>
+  <lot x="34" y="66" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 2.tbx"/>
+  <lot x="155" y="61" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 5.tbx"/>
+  <lot x="68" y="63" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 3.tbx"/>
+  <lot x="27" y="121" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 3.tbx"/>
+  <lot x="172" y="139" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 2.tbx"/>
+  <lot x="30" y="86" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 3.tbx"/>
+  <lot x="60" y="113" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 4.tbx"/>
+  <lot x="86" y="115" level="0" width="9" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 1.tbx"/>
+  <lot x="189" y="121" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 3.tbx"/>
+  <lot x="128" y="134" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 4.tbx"/>
+  <lot x="107" y="131" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="147" y="139" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="142" y="106" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 4.tbx"/>
+  <lot x="270" y="80" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 4.tbx"/>
+  <lot x="271" y="38" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 5.tbx"/>
+  <lot x="220" y="115" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 5.tbx"/>
+  <lot x="221" y="143" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 6.tbx"/>
+  <lot x="240" y="66" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer South 7.tbx"/>
+  <lot x="258" y="116" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 5.tbx"/>
+  <lot x="267" y="64" level="0" width="15" height="7" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer North 4.tbx"/>
+  <lot x="204" y="73" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 3.tbx"/>
+  <lot x="227" y="74" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 5.tbx"/>
+  <lot x="247" y="33" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer West 6.tbx"/>
+  <lot x="211" y="33" level="0" width="7" height="15" map="../../../../Buildings For PZ/credit them/fantasiado/Trailer park/Trailer East 5.tbx"/>
+ </cell>
+ <cell x="4" y="14" map="coyote_4_14.tmx">
+  <object group="TrailerPark" type="TrailerPark" x="1" y="30" level="0" width="188" height="125"/>
+ </cell>
+ <cell x="5" y="14" map="coyote_5_14.tmx"/>
+ <cell x="6" y="14" map="coyote_6_14.tmx"/>
+ <cell x="7" y="14" map="coyote_7_14.tmx"/>
+ <cell x="8" y="14" map="coyote_8_14.tmx"/>
+ <cell x="9" y="14" map="coyote_9_14.tmx"/>
+ <cell x="10" y="14" map="coyote_10_14.tmx"/>
+ <cell x="11" y="14" map="coyote_11_14.tmx"/>
+ <cell x="12" y="14" map="coyote_12_14.tmx"/>
+ <cell x="13" y="14" map="coyote_13_14.tmx"/>
+ <cell x="14" y="14" map="coyote_14_14.tmx"/>
+ <cell x="0" y="16" map="spaceship_0_16.tmx"/>
+</world>
