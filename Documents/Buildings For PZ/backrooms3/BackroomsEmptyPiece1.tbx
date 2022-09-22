@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<building version="3" width="100" height="100" ExteriorWall="4" ExteriorWallTrim="0" Door="2" DoorFrame="1" Window="15" Curtains="0" Shutters="13" Stairs="14" RoofCap="9" RoofSlope="10" RoofTop="12" GrimeWall="7">
+ <tile_entry category="door_frames">
+  <tile enum="West" tile="fixtures_doors_frames_01_000"/>
+  <tile enum="North" tile="fixtures_doors_frames_01_001"/>
+ </tile_entry>
+ <tile_entry category="doors">
+  <tile enum="West" tile="aza_tron_door_black_040"/>
+  <tile enum="North" tile="aza_tron_door_black_041"/>
+  <tile enum="WestOpen" tile="aza_tron_door_black_042"/>
+  <tile enum="NorthOpen" tile="aza_tron_door_black_043"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="Aza_new_SewerWalls_000"/>
+  <tile enum="North" tile="Aza_new_SewerWalls_001"/>
+  <tile enum="NorthWest" tile="Aza_new_SewerWalls_002"/>
+  <tile enum="SouthEast" tile="Aza_new_SewerWalls_003"/>
+  <tile enum="WestWindow" tile="Aza_new_SewerWalls_007"/>
+  <tile enum="NorthWindow" tile="Aza_new_SewerWalls_008"/>
+  <tile enum="WestDoor" tile="Aza_new_SewerWalls_009"/>
+  <tile enum="NorthDoor" tile="Aza_new_SewerWalls_010"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="aza_walls_backrooms_000"/>
+  <tile enum="North" tile="aza_walls_backrooms_001"/>
+  <tile enum="NorthWest" tile="aza_walls_backrooms_002"/>
+  <tile enum="SouthEast" tile="aza_walls_backrooms_003"/>
+  <tile enum="WestWindow" tile="aza_walls_backrooms_008"/>
+  <tile enum="NorthWindow" tile="aza_walls_backrooms_009"/>
+  <tile enum="WestDoor" tile="aza_walls_backrooms_010"/>
+  <tile enum="NorthDoor" tile="aza_walls_backrooms_011"/>
+ </tile_entry>
+ <tile_entry category="floors">
+  <tile enum="Floor" tile="aza_floor_backrooms_000"/>
+ </tile_entry>
+ <tile_entry category="grime_floor">
+  <tile enum="West" tile="overlay_grime_floor_01_000"/>
+  <tile enum="North" tile="overlay_grime_floor_01_001"/>
+  <tile enum="East" tile="overlay_grime_floor_01_009"/>
+  <tile enum="South" tile="overlay_grime_floor_01_008"/>
+  <tile enum="SouthWest" tile="overlay_grime_floor_01_011"/>
+  <tile enum="NorthWest" tile="overlay_grime_floor_01_002"/>
+  <tile enum="NorthEast" tile="overlay_grime_floor_01_003"/>
+  <tile enum="SouthEast" tile="overlay_grime_floor_01_010"/>
+ </tile_entry>
+ <tile_entry category="grime_wall">
+  <tile enum="West" tile="overlay_grime_wall_01_000"/>
+  <tile enum="North" tile="overlay_grime_wall_01_001"/>
+  <tile enum="NorthWest" tile="overlay_grime_wall_01_002"/>
+  <tile enum="SouthEast" tile="overlay_grime_wall_01_003"/>
+  <tile enum="WestWindow" tile="overlay_grime_wall_01_008"/>
+  <tile enum="NorthWindow" tile="overlay_grime_wall_01_009"/>
+  <tile enum="WestDoor" tile="overlay_grime_wall_01_010"/>
+  <tile enum="NorthDoor" tile="overlay_grime_wall_01_011"/>
+  <tile enum="WestTrim" tile="overlay_grime_wall_01_032"/>
+  <tile enum="NorthTrim" tile="overlay_grime_wall_01_033"/>
+  <tile enum="NorthWestTrim" tile="overlay_grime_wall_01_034"/>
+  <tile enum="SouthEastTrim" tile="overlay_grime_wall_01_035"/>
+  <tile enum="WestDoubleLeft" tile="overlay_grime_wall_01_036"/>
+  <tile enum="WestDoubleRight" tile="overlay_grime_wall_01_037"/>
+  <tile enum="NorthDoubleLeft" tile="overlay_grime_wall_01_038"/>
+  <tile enum="NorthDoubleRight" tile="overlay_grime_wall_01_039"/>
+ </tile_entry>
+ <tile_entry category="interior_walls">
+  <tile enum="West" tile="aza_walls_backrooms_000"/>
+  <tile enum="North" tile="aza_walls_backrooms_001"/>
+  <tile enum="NorthWest" tile="aza_walls_backrooms_002"/>
+  <tile enum="SouthEast" tile="aza_walls_backrooms_003"/>
+  <tile enum="WestWindow" tile="aza_walls_backrooms_008"/>
+  <tile enum="NorthWindow" tile="aza_walls_backrooms_009"/>
+  <tile enum="WestDoor" tile="aza_walls_backrooms_010"/>
+  <tile enum="NorthDoor" tile="aza_walls_backrooms_011"/>
+ </tile_entry>
+ <tile_entry category="roof_caps">
+  <tile enum="CapRiseE1" tile="walls_exterior_roofs_05_000"/>
+  <tile enum="CapRiseE2" tile="walls_exterior_roofs_05_001"/>
+  <tile enum="CapRiseE3" tile="walls_exterior_roofs_05_002"/>
+  <tile enum="CapFallE1" tile="walls_exterior_roofs_05_008"/>
+  <tile enum="CapFallE2" tile="walls_exterior_roofs_05_009"/>
+  <tile enum="CapFallE3" tile="walls_exterior_roofs_05_010"/>
+  <tile enum="CapRiseS1" tile="walls_exterior_roofs_05_013"/>
+  <tile enum="CapRiseS2" tile="walls_exterior_roofs_05_012"/>
+  <tile enum="CapRiseS3" tile="walls_exterior_roofs_05_011"/>
+  <tile enum="CapFallS1" tile="walls_exterior_roofs_05_005"/>
+  <tile enum="CapFallS2" tile="walls_exterior_roofs_05_004"/>
+  <tile enum="CapFallS3" tile="walls_exterior_roofs_05_003"/>
+  <tile enum="PeakPt5S" tile="walls_exterior_roofs_05_007"/>
+  <tile enum="PeakPt5E" tile="walls_exterior_roofs_05_015"/>
+  <tile enum="PeakOnePt5S" tile="walls_exterior_roofs_05_006"/>
+  <tile enum="PeakOnePt5E" tile="walls_exterior_roofs_05_014"/>
+  <tile enum="PeakTwoPt5S" tile="walls_exterior_roofs_05_017"/>
+  <tile enum="PeakTwoPt5E" tile="walls_exterior_roofs_05_016"/>
+  <tile enum="CapGapS1" tile=""/>
+  <tile enum="CapGapS2" tile=""/>
+  <tile enum="CapGapS3" tile=""/>
+  <tile enum="CapGapE1" tile=""/>
+  <tile enum="CapGapE2" tile=""/>
+  <tile enum="CapGapE3" tile=""/>
+  <tile enum="CapShallowRiseS1" tile="walls_exterior_roofs_05_054"/>
+  <tile enum="CapShallowRiseS2" tile="walls_exterior_roofs_05_055"/>
+  <tile enum="CapShallowFallS1" tile="walls_exterior_roofs_05_051"/>
+  <tile enum="CapShallowFallS2" tile="walls_exterior_roofs_05_050"/>
+  <tile enum="CapShallowRiseE1" tile="walls_exterior_roofs_05_048"/>
+  <tile enum="CapShallowRiseE2" tile="walls_exterior_roofs_05_049"/>
+  <tile enum="CapShallowFallE1" tile="walls_exterior_roofs_05_053"/>
+  <tile enum="CapShallowFallE2" tile="walls_exterior_roofs_05_052"/>
+ </tile_entry>
+ <tile_entry category="roof_slopes">
+  <tile enum="SlopeS1" tile="roofs_01_000"/>
+  <tile enum="SlopeS2" tile="roofs_01_001"/>
+  <tile enum="SlopeS3" tile="roofs_01_002"/>
+  <tile enum="SlopeE1" tile="roofs_01_005"/>
+  <tile enum="SlopeE2" tile="roofs_01_004"/>
+  <tile enum="SlopeE3" tile="roofs_01_003"/>
+  <tile enum="SlopePt5S" tile="roofs_01_015" offset="1,1"/>
+  <tile enum="SlopePt5E" tile="roofs_01_014" offset="1,1"/>
+  <tile enum="SlopeOnePt5S" tile="roofs_01_015"/>
+  <tile enum="SlopeOnePt5E" tile="roofs_01_014"/>
+  <tile enum="SlopeTwoPt5S" tile="roofs_01_071"/>
+  <tile enum="SlopeTwoPt5E" tile="roofs_01_070"/>
+  <tile enum="ShallowSlopeW1" tile="roofs_01_083"/>
+  <tile enum="ShallowSlopeW2" tile="roofs_01_082"/>
+  <tile enum="ShallowSlopeE1" tile="roofs_01_080"/>
+  <tile enum="ShallowSlopeE2" tile="roofs_01_081"/>
+  <tile enum="ShallowSlopeN1" tile="roofs_01_084"/>
+  <tile enum="ShallowSlopeN2" tile="roofs_01_085"/>
+  <tile enum="ShallowSlopeS1" tile="roofs_01_087"/>
+  <tile enum="ShallowSlopeS2" tile="roofs_01_086"/>
+  <tile enum="Inner1" tile="roofs_01_011"/>
+  <tile enum="Inner2" tile="roofs_01_012"/>
+  <tile enum="Inner3" tile="roofs_01_013"/>
+  <tile enum="Outer1" tile="roofs_01_008"/>
+  <tile enum="Outer2" tile="roofs_01_009"/>
+  <tile enum="Outer3" tile="roofs_01_010"/>
+  <tile enum="InnerPt5" tile="roofs_01_067"/>
+  <tile enum="InnerOnePt5" tile="roofs_01_068"/>
+  <tile enum="InnerTwoPt5" tile="roofs_01_069"/>
+  <tile enum="OuterPt5" tile="roofs_01_064"/>
+  <tile enum="OuterOnePt5" tile="roofs_01_065"/>
+  <tile enum="OuterTwoPt5" tile="roofs_01_066"/>
+  <tile enum="CornerSW1" tile="roofs_01_024"/>
+  <tile enum="CornerSW2" tile="roofs_01_025"/>
+  <tile enum="CornerSW3" tile="roofs_01_026"/>
+  <tile enum="CornerNE1" tile="roofs_01_029"/>
+  <tile enum="CornerNE2" tile="roofs_01_028"/>
+  <tile enum="CornerNE3" tile="roofs_01_027"/>
+ </tile_entry>
+ <tile_entry category="roof_tops">
+  <tile enum="West1" tile="aza_tron_floor_new_004" offset="-1,-1"/>
+  <tile enum="West2" tile="aza_tron_floor_new_004" offset="-2,-2"/>
+  <tile enum="West3" tile="aza_tron_floor_new_004"/>
+  <tile enum="North1" tile="aza_tron_floor_new_004" offset="-1,-1"/>
+  <tile enum="North2" tile="aza_tron_floor_new_004" offset="-2,-2"/>
+  <tile enum="North3" tile="aza_tron_floor_new_004"/>
+ </tile_entry>
+ <tile_entry category="roof_tops">
+  <tile enum="West1" tile="floors_exterior_street_01_018" offset="-1,-1"/>
+  <tile enum="West2" tile="floors_exterior_street_01_018" offset="-2,-2"/>
+  <tile enum="West3" tile="floors_exterior_street_01_018"/>
+  <tile enum="North1" tile=""/>
+  <tile enum="North2" tile=""/>
+  <tile enum="North3" tile=""/>
+ </tile_entry>
+ <tile_entry category="shutters">
+  <tile enum="WestBelow" tile="fixtures_windows_detailing_01_016"/>
+  <tile enum="WestAbove" tile="fixtures_windows_detailing_01_017"/>
+  <tile enum="NorthLeft" tile="fixtures_windows_detailing_01_018"/>
+  <tile enum="NorthRight" tile="fixtures_windows_detailing_01_019"/>
+ </tile_entry>
+ <tile_entry category="stairs">
+  <tile enum="West1" tile="aza_junglestairs_000"/>
+  <tile enum="West2" tile="aza_junglestairs_001"/>
+  <tile enum="West3" tile="aza_junglestairs_002"/>
+  <tile enum="North1" tile="aza_junglestairs_008"/>
+  <tile enum="North2" tile="aza_junglestairs_009"/>
+  <tile enum="North3" tile="aza_junglestairs_010"/>
+ </tile_entry>
+ <tile_entry category="windows">
+  <tile enum="West" tile="fixtures_windows_01_000"/>
+  <tile enum="North" tile="fixtures_windows_01_001"/>
+ </tile_entry>
+ <furniture layer="WallFurniture">
+  <entry orient="W">
+   <tile x="0" y="0" name="lighting_indoor_01_001"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="lighting_indoor_01_000"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="lighting_indoor_01_002"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="lighting_indoor_01_003"/>
+  </entry>
+ </furniture>
+ <user_tiles/>
+ <used_tiles>3 8 5 6 7 4 9 10 11 12</used_tiles>
+ <used_furniture>0</used_furniture>
+ <room Name="Backrooms" InternalName="hall" Color="200 200 200" InteriorWall="8" InteriorWallTrim="0" Floor="5" GrimeFloor="6" GrimeWall="7"/>
+ <room Name="Backrooms" InternalName="hall" Color="255 0 0" InteriorWall="8" InteriorWallTrim="0" Floor="5" GrimeFloor="6" GrimeWall="7"/>
+ <room Name="Backrooms" InternalName="hall" Color="128 128 128" InteriorWall="8" InteriorWallTrim="0" Floor="5" GrimeFloor="6" GrimeWall="7"/>
+ <floor>
+  <object type="wall" length="100" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="0" y="100" dir="W" Tile="0"/>
+  <object type="wall" length="100" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="100" y="0" dir="N" Tile="0"/>
+  <object type="wall" length="100" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="0" y="0" dir="W" Tile="0"/>
+  <object type="wall" length="100" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="0" y="0" dir="N" Tile="0"/>
+  <object type="wall" length="29" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="6" y="21" dir="W" Tile="0"/>
+  <object type="wall" length="30" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="50" y="21" dir="N" Tile="0"/>
+  <object type="wall" length="37" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="31" y="66" dir="W" Tile="0"/>
+  <object type="wall" length="32" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="80" y="33" dir="N" Tile="0"/>
+  <object type="wall" length="16" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="62" y="21" dir="W" Tile="0"/>
+  <object type="wall" length="17" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="65" y="35" dir="N" Tile="0"/>
+  <object type="wall" length="30" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="36" y="36" dir="N" Tile="0"/>
+  <object type="wall" length="18" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="20" y="79" dir="N" Tile="0"/>
+  <object type="wall" length="32" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="5" y="63" dir="N" Tile="0"/>
+  <object type="wall" length="27" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="5" y="49" dir="W" Tile="0"/>
+  <object type="wall" length="27" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="36" y="80" dir="W" Tile="0"/>
+  <object type="wall" length="18" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="81" y="80" dir="W" Tile="0"/>
+  <object type="wall" length="18" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="95" y="48" dir="N" Tile="0"/>
+  <object type="wall" length="30" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="94" y="5" dir="N" Tile="0"/>
+  <object type="wall" length="35" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="47" y="5" dir="W" Tile="0"/>
+  <object type="wall" length="14" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="20" y="7" dir="W" Tile="0"/>
+  <object type="wall" length="15" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="19" y="35" dir="W" Tile="0"/>
+  <object type="wall" length="30" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="49" y="94" dir="W" Tile="0"/>
+  <object type="wall" length="18" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="20" y="48" dir="N" Tile="0"/>
+  <object type="wall" length="10" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="50" y="72" dir="N" Tile="0"/>
+  <object type="wall" length="28" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="27" y="72" dir="N" Tile="0"/>
+  <object type="wall" length="50" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="36" y="87" dir="W" Tile="0"/>
+  <object type="wall" length="15" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="72" y="72" dir="N" Tile="0"/>
+  <object type="wall" length="20" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="73" y="42" dir="N" Tile="0"/>
+  <object type="wall" length="15" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="63" y="43" dir="W" Tile="0"/>
+  <object type="wall" length="13" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="87" y="43" dir="W" Tile="0"/>
+  <object type="wall" length="25" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="1" y="43" dir="W" Tile="0"/>
+  <object type="wall" length="1" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="0" y="43" dir="W" Tile="0"/>
+  <object type="wall" length="9" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="21" y="28" dir="N" Tile="0"/>
+  <object type="wall" length="28" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="37" y="27" dir="W" Tile="0"/>
+  <object type="wall" length="17" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="73" y="17" dir="N" Tile="0"/>
+  <object type="wall" length="36" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="33" y="13" dir="W" Tile="0"/>
+  <object type="wall" length="8" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="65" y="0" dir="N" Tile="0"/>
+  <object type="wall" length="9" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="66" y="91" dir="N" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="47" y="60" dir="W" Tile="0"/>
+  <object type="wall" length="15" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="50" y="55" dir="W" Tile="0"/>
+  <object type="wall" length="6" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="70" y="31" dir="N" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="45" y="17" dir="N" Tile="0"/>
+  <object type="wall" length="7" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="31" y="10" dir="W" Tile="0"/>
+  <object type="wall" length="6" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="90" y="77" dir="N" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="92" y="90" dir="W" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="15" y="77" dir="N" Tile="0"/>
+  <object type="wall" length="6" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="62" dir="N" Tile="0"/>
+  <object type="wall" length="8" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="32" y="55" dir="W" Tile="0"/>
+  <object type="wall" length="10" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="75" y="55" dir="W" Tile="0"/>
+  <object type="wall" length="7" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="92" y="40" dir="W" Tile="0"/>
+  <object type="wall" length="17" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="64" y="70" dir="W" Tile="0"/>
+  <object type="wall" length="11" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="58" y="87" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="66" y="94" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="45" y="93" dir="N" Tile="0"/>
+  <object type="wall" length="7" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="40" y="31" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="40" y="15" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="45" y="5" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="60" y="6" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="79" y="25" dir="W" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="77" y="75" dir="W" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="33" y="90" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="79" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="18" y="70" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="20" y="53" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="23" y="49" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="25" y="50" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="18" y="40" dir="W" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="33" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="19" y="25" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="22" y="21" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="25" y="17" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="55" y="34" dir="N" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="47" y="30" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="32" y="70" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="36" y="61" dir="N" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="37" y="60" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="32" y="75" dir="W" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="44" y="87" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="51" y="90" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="64" y="90" dir="W" Tile="0"/>
+  <object type="wall" length="15" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="54" y="57" dir="W" Tile="0"/>
+  <object type="wall" length="34" InteriorTile="8" ExteriorTrim="0" InteriorTrim="0" x="48" y="48" dir="W" Tile="0"/>
+  <object type="wall" length="6" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="52" y="48" dir="W" Tile="0"/>
+  <object type="wall" length="5" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="62" y="48" dir="W" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="73" y="48" dir="W" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="48" y="75" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="47" y="80" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="48" y="85" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="63" y="85" dir="W" Tile="0"/>
+  <object type="wall" length="1" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="77" y="40" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="85" y="35" dir="N" Tile="0"/>
+  <object type="wall" length="4" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="63" y="5" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="74" y="5" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="81" y="10" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="71" y="21" dir="W" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="25" y="5" dir="N" Tile="0"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="7" dir="N" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="17" dir="N" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="50" y="70" dir="W" Tile="0"/>
+  <object type="wall" length="1" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="45" y="66" dir="W" Tile="0"/>
+  <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="45" y="63" dir="N" Tile="0"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="16" y="89"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="48" y="89"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="79" y="89"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="98" y="89"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="97" y="74"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="38" y="74"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="23" y="59"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="91" y="55"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="82" y="40"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="53" y="40"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="16" y="25"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="51" y="10"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="79" y="10"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="85" y="18"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="40" y="38"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="25" y="80"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="9" y="69"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="9" y="97"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="24" y="97"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="30" y="92"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="45" y="91"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="65" y="92"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="75" y="92"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="90" y="92"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="93" y="84"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="84" y="83"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="69" y="80"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="54" y="77"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="39" y="78"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="24" y="77"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="9" y="77"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="3" y="75"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="6" y="69"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="15" y="64"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="30" y="64"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="45" y="62"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="63" y="60"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="84" y="62"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="90" y="62"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="98" y="54"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="84" y="53"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="69" y="52"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="54" y="52"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="37" y="45"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="34" y="45"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="24" y="46"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="9" y="46"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="8" y="39"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="15" y="36"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="30" y="37"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="45" y="37"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="60" y="36"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="75" y="37"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="90" y="36"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="96" y="24"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="90" y="18"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="80" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="67" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="52" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="35" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="22" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="8" y="15"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="7" y="9"/>
+  <object type="furniture" FurnitureTiles="0" orient="S" x="20" y="9"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="30" y="8"/>
+  <object type="furniture" FurnitureTiles="0" orient="E" x="44" y="8"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="60" y="5"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="75" y="7"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="90" y="6"/>
+  <rooms>
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3
+</rooms>
+ </floor>
+ <floor>
+  <object type="roof" width="99" height="99" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="9" SlopeTiles="10" TopTiles="12" x="0" y="0"/>
+  <rooms>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</rooms>
+ </floor>
+</building>
